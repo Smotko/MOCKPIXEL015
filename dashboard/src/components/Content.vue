@@ -42,4 +42,7 @@ export default {
 .container {
   padding: 10px 0;
 }
+h1 {
+  padding: 20px 10px;
+}
 </style>
