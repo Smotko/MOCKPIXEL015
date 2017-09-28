@@ -4,12 +4,12 @@
     <div class="tile is-ancestor">
       <div class="tile is-vertical is-12">
         <div calss="tile">
-          <h1 class="title">Parental controls</h1>
+          <h1 class="title">Car controls</h1>
         </div>
         <div class="tile">
-          <card title="Car status" content="All OK" status="is-primary"></card>
-          <card title="Parental controls" content="Off" status="is-warning"></card>
-          <card title="Geofence" content="Not defined"></card>
+          <CarParentalControl v-bind:enabled="false"></CarParentalControl>
+          <CarLock v-bind:locked="false"></CarLock>
+          <CarGeofence v-bind:enabled="false"></CarGeofence>
         </div>
         <div class="tile">
           <h1 class="title">Car overview</h1>
@@ -17,7 +17,7 @@
         <div class="tile">
           <card title="Engine" content="Off"></card>
           <card title="Fuel level" content="90%" status="is-primary"></card>
-          <card title="Milage" content="1337"></card>
+          <card title="Milage" content="1337" status="is-info"></card>
         </div>
       </div>
     </div>
@@ -27,10 +27,16 @@
 
 <script>
 import Card from '@/components/Card'
+import CarLock from '@/components/CarLock'
+import CarParentalControl from '@/components/CarParentalControl'
+import CarGeofence from '@/components/CarGeofence'
 export default {
   name: 'content',
   components: {
-    Card
+    Card,
+    CarLock,
+    CarParentalControl,
+    CarGeofence
   },
   data () {
     return {}
