@@ -20,6 +20,18 @@
 		47775C101F7D86B4004F042A /* DependencyGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C0D1F7D86B4004F042A /* DependencyGraph.swift */; };
 		47775C131F7D906F004F042A /* Vehicule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C121F7D906F004F042A /* Vehicule.swift */; };
 		47775C151F7D93BA004F042A /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C141F7D93BA004F042A /* Alert.swift */; };
+		47775C191F7D9B01004F042A /* VehiculeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C171F7D9B01004F042A /* VehiculeViewController.swift */; };
+		47775C1A1F7D9B01004F042A /* VehiculeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47775C181F7D9B01004F042A /* VehiculeViewController.xib */; };
+		47775C1E1F7D9B5F004F042A /* VehiculeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C1D1F7D9B5F004F042A /* VehiculeViewModel.swift */; };
+		47775C211F7DA288004F042A /* VehiculeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C201F7DA288004F042A /* VehiculeRepository.swift */; };
+		47775C241F7DA304004F042A /* APIVehiculeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C231F7DA304004F042A /* APIVehiculeProvider.swift */; };
+		47775C261F7DA320004F042A /* APIVehiculeTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C251F7DA320004F042A /* APIVehiculeTransformer.swift */; };
+		47775C2D1F7DA7F5004F042A /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C2B1F7DA7F5004F042A /* AlertsViewController.swift */; };
+		47775C2E1F7DA7F5004F042A /* AlertsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47775C2C1F7DA7F5004F042A /* AlertsViewController.xib */; };
+		47775C301F7DA80F004F042A /* AlertsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C2F1F7DA80F004F042A /* AlertsViewModel.swift */; };
+		47775C321F7DA85F004F042A /* PushNotificationsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C311F7DA85F004F042A /* PushNotificationsRepository.swift */; };
+		47775C341F7DA870004F042A /* APIPushNotificationsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C331F7DA870004F042A /* APIPushNotificationsProvider.swift */; };
+		47775C361F7DA882004F042A /* APIPushNotificationsTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C351F7DA882004F042A /* APIPushNotificationsTransformer.swift */; };
 		9E36C2CC5ED6EF312CDAD6B1 /* Pods_driverChap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2829DBDBD46A07EF4442944A /* Pods_driverChap.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +66,18 @@
 		47775C0D1F7D86B4004F042A /* DependencyGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DependencyGraph.swift; path = ../../../../../../../.Trash/driverChap/driverChap/DependencyInjection/DependencyGraph.swift; sourceTree = "<group>"; };
 		47775C121F7D906F004F042A /* Vehicule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicule.swift; sourceTree = "<group>"; };
 		47775C141F7D93BA004F042A /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		47775C171F7D9B01004F042A /* VehiculeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiculeViewController.swift; sourceTree = "<group>"; };
+		47775C181F7D9B01004F042A /* VehiculeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VehiculeViewController.xib; sourceTree = "<group>"; };
+		47775C1D1F7D9B5F004F042A /* VehiculeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiculeViewModel.swift; sourceTree = "<group>"; };
+		47775C201F7DA288004F042A /* VehiculeRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiculeRepository.swift; sourceTree = "<group>"; };
+		47775C231F7DA304004F042A /* APIVehiculeProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIVehiculeProvider.swift; sourceTree = "<group>"; };
+		47775C251F7DA320004F042A /* APIVehiculeTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIVehiculeTransformer.swift; sourceTree = "<group>"; };
+		47775C2B1F7DA7F5004F042A /* AlertsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertsViewController.swift; sourceTree = "<group>"; };
+		47775C2C1F7DA7F5004F042A /* AlertsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertsViewController.xib; sourceTree = "<group>"; };
+		47775C2F1F7DA80F004F042A /* AlertsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertsViewModel.swift; sourceTree = "<group>"; };
+		47775C311F7DA85F004F042A /* PushNotificationsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationsRepository.swift; sourceTree = "<group>"; };
+		47775C331F7DA870004F042A /* APIPushNotificationsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIPushNotificationsProvider.swift; sourceTree = "<group>"; };
+		47775C351F7DA882004F042A /* APIPushNotificationsTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIPushNotificationsTransformer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +131,9 @@
 		47775BE41F7D844A004F042A /* driverChap */ = {
 			isa = PBXGroup;
 			children = (
+				47775C281F7DA7CB004F042A /* PushNotifications */,
+				47775C1F1F7DA279004F042A /* Repository */,
+				47775C161F7D9AE8004F042A /* Vehicule */,
 				47775C111F7D903F004F042A /* Model */,
 				47775C0A1F7D8697004F042A /* DependencyInjection */,
 				47775C051F7D8656004F042A /* API */,
@@ -155,6 +182,87 @@
 				47775C141F7D93BA004F042A /* Alert.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		47775C161F7D9AE8004F042A /* Vehicule */ = {
+			isa = PBXGroup;
+			children = (
+				47775C1C1F7D9B1B004F042A /* ViewModel */,
+				47775C1B1F7D9B15004F042A /* View */,
+			);
+			name = Vehicule;
+			sourceTree = "<group>";
+		};
+		47775C1B1F7D9B15004F042A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47775C171F7D9B01004F042A /* VehiculeViewController.swift */,
+				47775C181F7D9B01004F042A /* VehiculeViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		47775C1C1F7D9B1B004F042A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				47775C1D1F7D9B5F004F042A /* VehiculeViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		47775C1F1F7DA279004F042A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				47775C271F7DA7B5004F042A /* PushNotifications */,
+				47775C221F7DA2F3004F042A /* Vehicule */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		47775C221F7DA2F3004F042A /* Vehicule */ = {
+			isa = PBXGroup;
+			children = (
+				47775C201F7DA288004F042A /* VehiculeRepository.swift */,
+				47775C231F7DA304004F042A /* APIVehiculeProvider.swift */,
+				47775C251F7DA320004F042A /* APIVehiculeTransformer.swift */,
+			);
+			name = Vehicule;
+			sourceTree = "<group>";
+		};
+		47775C271F7DA7B5004F042A /* PushNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				47775C311F7DA85F004F042A /* PushNotificationsRepository.swift */,
+				47775C331F7DA870004F042A /* APIPushNotificationsProvider.swift */,
+				47775C351F7DA882004F042A /* APIPushNotificationsTransformer.swift */,
+			);
+			name = PushNotifications;
+			sourceTree = "<group>";
+		};
+		47775C281F7DA7CB004F042A /* PushNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				47775C2A1F7DA7E2004F042A /* ViewModel */,
+				47775C291F7DA7DE004F042A /* View */,
+			);
+			name = PushNotifications;
+			sourceTree = "<group>";
+		};
+		47775C291F7DA7DE004F042A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47775C2B1F7DA7F5004F042A /* AlertsViewController.swift */,
+				47775C2C1F7DA7F5004F042A /* AlertsViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		47775C2A1F7DA7E2004F042A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				47775C2F1F7DA80F004F042A /* AlertsViewModel.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		5C0D4CA27A6DD5DF71B01657 /* Frameworks */ = {
@@ -256,6 +364,8 @@
 				47775BF01F7D844A004F042A /* LaunchScreen.storyboard in Resources */,
 				47775BED1F7D844A004F042A /* Assets.xcassets in Resources */,
 				47775BEB1F7D844A004F042A /* Main.storyboard in Resources */,
+				47775C1A1F7D9B01004F042A /* VehiculeViewController.xib in Resources */,
+				47775C2E1F7DA7F5004F042A /* AlertsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,13 +449,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47775C341F7DA870004F042A /* APIPushNotificationsProvider.swift in Sources */,
 				47775C151F7D93BA004F042A /* Alert.swift in Sources */,
+				47775C261F7DA320004F042A /* APIVehiculeTransformer.swift in Sources */,
+				47775C321F7DA85F004F042A /* PushNotificationsRepository.swift in Sources */,
 				47775C091F7D8673004F042A /* Router.swift in Sources */,
+				47775C241F7DA304004F042A /* APIVehiculeProvider.swift in Sources */,
+				47775C361F7DA882004F042A /* APIPushNotificationsTransformer.swift in Sources */,
 				47775BE81F7D844A004F042A /* ViewController.swift in Sources */,
 				47775C101F7D86B4004F042A /* DependencyGraph.swift in Sources */,
+				47775C211F7DA288004F042A /* VehiculeRepository.swift in Sources */,
+				47775C2D1F7DA7F5004F042A /* AlertsViewController.swift in Sources */,
 				47775C0E1F7D86B4004F042A /* DependencyInjection.swift in Sources */,
+				47775C191F7D9B01004F042A /* VehiculeViewController.swift in Sources */,
 				47775BE61F7D844A004F042A /* AppDelegate.swift in Sources */,
+				47775C1E1F7D9B5F004F042A /* VehiculeViewModel.swift in Sources */,
 				47775C081F7D8673004F042A /* RequestHandler.swift in Sources */,
+				47775C301F7DA80F004F042A /* AlertsViewModel.swift in Sources */,
 				47775C131F7D906F004F042A /* Vehicule.swift in Sources */,
 				47775C0F1F7D86B4004F042A /* DependencyGraphProtocol.swift in Sources */,
 			);

@@ -11,6 +11,6 @@ class Vehicule: Object {
     dynamic var isMoving = false
     var pushNotifications = List<Alert>()
     override static func primaryKey() -> String? {
-        return "countryID"
+        return "id"
     }
 }
