@@ -15,6 +15,9 @@
 		47775BFB1F7D844A004F042A /* driverChapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775BFA1F7D844A004F042A /* driverChapTests.swift */; };
 		47775C081F7D8673004F042A /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C061F7D8673004F042A /* RequestHandler.swift */; };
 		47775C091F7D8673004F042A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C071F7D8673004F042A /* Router.swift */; };
+		47775C0E1F7D86B4004F042A /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C0B1F7D86B4004F042A /* DependencyInjection.swift */; };
+		47775C0F1F7D86B4004F042A /* DependencyGraphProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C0C1F7D86B4004F042A /* DependencyGraphProtocol.swift */; };
+		47775C101F7D86B4004F042A /* DependencyGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C0D1F7D86B4004F042A /* DependencyGraph.swift */; };
 		9E36C2CC5ED6EF312CDAD6B1 /* Pods_driverChap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2829DBDBD46A07EF4442944A /* Pods_driverChap.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +47,9 @@
 		47775BFC1F7D844A004F042A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47775C061F7D8673004F042A /* RequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestHandler.swift; path = ../../../../../../../.Trash/driverChap/driverChap/API/RequestHandler.swift; sourceTree = "<group>"; };
 		47775C071F7D8673004F042A /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = ../../../../../../../.Trash/driverChap/driverChap/API/Router.swift; sourceTree = "<group>"; };
+		47775C0B1F7D86B4004F042A /* DependencyInjection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DependencyInjection.swift; path = ../../../../../../../.Trash/driverChap/driverChap/DependencyInjection/DependencyInjection.swift; sourceTree = "<group>"; };
+		47775C0C1F7D86B4004F042A /* DependencyGraphProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DependencyGraphProtocol.swift; path = ../../../../../../../.Trash/driverChap/driverChap/DependencyInjection/DependencyGraphProtocol.swift; sourceTree = "<group>"; };
+		47775C0D1F7D86B4004F042A /* DependencyGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DependencyGraph.swift; path = ../../../../../../../.Trash/driverChap/driverChap/DependencyInjection/DependencyGraph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		47775BE41F7D844A004F042A /* driverChap */ = {
 			isa = PBXGroup;
 			children = (
+				47775C0A1F7D8697004F042A /* DependencyInjection */,
 				47775C051F7D8656004F042A /* API */,
 				47775BE51F7D844A004F042A /* AppDelegate.swift */,
 				47775BE71F7D844A004F042A /* ViewController.swift */,
@@ -124,6 +131,16 @@
 				47775C071F7D8673004F042A /* Router.swift */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		47775C0A1F7D8697004F042A /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				47775C0B1F7D86B4004F042A /* DependencyInjection.swift */,
+				47775C0C1F7D86B4004F042A /* DependencyGraphProtocol.swift */,
+				47775C0D1F7D86B4004F042A /* DependencyGraph.swift */,
+			);
+			name = DependencyInjection;
 			sourceTree = "<group>";
 		};
 		5C0D4CA27A6DD5DF71B01657 /* Frameworks */ = {
@@ -310,8 +327,11 @@
 			files = (
 				47775C091F7D8673004F042A /* Router.swift in Sources */,
 				47775BE81F7D844A004F042A /* ViewController.swift in Sources */,
+				47775C101F7D86B4004F042A /* DependencyGraph.swift in Sources */,
+				47775C0E1F7D86B4004F042A /* DependencyInjection.swift in Sources */,
 				47775BE61F7D844A004F042A /* AppDelegate.swift in Sources */,
 				47775C081F7D8673004F042A /* RequestHandler.swift in Sources */,
+				47775C0F1F7D86B4004F042A /* DependencyGraphProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
