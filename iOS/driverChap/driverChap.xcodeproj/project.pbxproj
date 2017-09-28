@@ -13,6 +13,7 @@
 		47DCD8471F7D6E63006BB352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47DCD8461F7D6E63006BB352 /* Assets.xcassets */; };
 		47DCD84A1F7D6E63006BB352 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DCD8481F7D6E63006BB352 /* LaunchScreen.storyboard */; };
 		47DCD8551F7D6E63006BB352 /* driverChapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DCD8541F7D6E63006BB352 /* driverChapTests.swift */; };
+		57872B9F8C8F80752FDD58FE /* Pods_driverChap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A5001436013F1359250628 /* Pods_driverChap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		087B6895D26D24B414F78824 /* Pods-driverChap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driverChap.release.xcconfig"; path = "Pods/Target Support Files/Pods-driverChap/Pods-driverChap.release.xcconfig"; sourceTree = "<group>"; };
 		47DCD83C1F7D6E63006BB352 /* driverChap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = driverChap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47DCD83F1F7D6E63006BB352 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47DCD8411F7D6E63006BB352 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		47DCD8501F7D6E63006BB352 /* driverChapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = driverChapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47DCD8541F7D6E63006BB352 /* driverChapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = driverChapTests.swift; sourceTree = "<group>"; };
 		47DCD8561F7D6E63006BB352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C16B32A74D333A2CA65C4CCB /* Pods-driverChap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driverChap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-driverChap/Pods-driverChap.debug.xcconfig"; sourceTree = "<group>"; };
+		C2A5001436013F1359250628 /* Pods_driverChap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_driverChap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57872B9F8C8F80752FDD58FE /* Pods_driverChap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		141DFEC6C8F55F0E179078A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2A5001436013F1359250628 /* Pods_driverChap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F7613C18050533CA7E6AB80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C16B32A74D333A2CA65C4CCB /* Pods-driverChap.debug.xcconfig */,
+				087B6895D26D24B414F78824 /* Pods-driverChap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		47DCD8331F7D6E63006BB352 = {
 			isa = PBXGroup;
 			children = (
 				47DCD83E1F7D6E63006BB352 /* driverChap */,
 				47DCD8531F7D6E63006BB352 /* driverChapTests */,
 				47DCD83D1F7D6E63006BB352 /* Products */,
+				1F7613C18050533CA7E6AB80 /* Pods */,
+				141DFEC6C8F55F0E179078A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47DCD8591F7D6E63006BB352 /* Build configuration list for PBXNativeTarget "driverChap" */;
 			buildPhases = (
+				19BE0BEAFF09C71F40A3A8EC /* [CP] Check Pods Manifest.lock */,
 				47DCD8381F7D6E63006BB352 /* Sources */,
 				47DCD8391F7D6E63006BB352 /* Frameworks */,
 				47DCD83A1F7D6E63006BB352 /* Resources */,
+				71833F34A8A8FADD7DCD07C6 /* [CP] Embed Pods Frameworks */,
+				B4013D9F819BB67CA4F96099 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +220,74 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19BE0BEAFF09C71F40A3A8EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-driverChap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71833F34A8A8FADD7DCD07C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-driverChap/Pods-driverChap-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/KVNProgress/KVNProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVNProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-driverChap/Pods-driverChap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4013D9F819BB67CA4F96099 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-driverChap/Pods-driverChap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		47DCD8381F7D6E63006BB352 /* Sources */ = {
@@ -351,6 +446,7 @@
 		};
 		47DCD85A1F7D6E63006BB352 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C16B32A74D333A2CA65C4CCB /* Pods-driverChap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -366,6 +462,7 @@
 		};
 		47DCD85B1F7D6E63006BB352 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 087B6895D26D24B414F78824 /* Pods-driverChap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
