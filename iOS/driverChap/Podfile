@@ -1,15 +1,14 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '9.0'
 
-target 'driverChap' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
+use_frameworks!
 
-  # Pods for driverChap
-
-  target 'driverChapTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
+target ‘DriverChap’ do
+    pod 'Realm'
+    pod 'RealmSwift'
+    pod 'Alamofire'
+    pod 'RxSwift'
+    pod 'SwiftyJSON'
+    pod 'Swinject', '~> 2.1.0'
+    pod 'Kingfisher'
+    pod 'KVNProgress', git: 'git@github.com:mobilejohnw/KVNProgress.git', branch: 'master', submodules: true
 end
