@@ -7,7 +7,20 @@
 		<key>driverChap.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>47775BE11F7D844A004F042A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>47775BF51F7D844A004F042A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

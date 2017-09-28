@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9E813892A2DA10F3AD6153EDAF5F23B2"
-               BuildableName = "Pods_driverChap.framework"
-               BlueprintName = "Pods-driverChap"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "47775BE11F7D844A004F042A"
+               BuildableName = "driverChap.app"
+               BlueprintName = "driverChap"
+               ReferencedContainer = "container:driverChap.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "47775BF51F7D844A004F042A"
+               BuildableName = "driverChapTests.xctest"
+               BlueprintName = "driverChapTests"
+               ReferencedContainer = "container:driverChap.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "47775BE11F7D844A004F042A"
+            BuildableName = "driverChap.app"
+            BlueprintName = "driverChap"
+            ReferencedContainer = "container:driverChap.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +61,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9E813892A2DA10F3AD6153EDAF5F23B2"
-            BuildableName = "Pods_driverChap.framework"
-            BlueprintName = "Pods-driverChap"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "47775BE11F7D844A004F042A"
+            BuildableName = "driverChap.app"
+            BlueprintName = "driverChap"
+            ReferencedContainer = "container:driverChap.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,6 +80,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "47775BE11F7D844A004F042A"
+            BuildableName = "driverChap.app"
+            BlueprintName = "driverChap"
+            ReferencedContainer = "container:driverChap.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
