@@ -9,6 +9,5 @@ target ‘driverChap’ do
     pod 'RxSwift'
     pod 'SwiftyJSON'
     pod 'Swinject', '~> 2.1.0'
-    pod 'Kingfisher'
     pod 'KVNProgress', git: 'git@github.com:mobilejohnw/KVNProgress.git', branch: 'master', submodules: true
 end
