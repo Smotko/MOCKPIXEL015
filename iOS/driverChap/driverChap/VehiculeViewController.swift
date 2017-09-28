@@ -2,6 +2,7 @@ import UIKit
 
 class VehiculeViewController: UIViewController {
 
+    @IBOutlet weak var carTableView: UITableView!
     var viewModel: VehiculeViewModel
     override func viewDidLoad() {
         super.viewDidLoad()

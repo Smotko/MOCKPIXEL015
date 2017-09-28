@@ -196,6 +196,7 @@
 		47775C1B1F7D9B15004F042A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				47775C371F7DB9F6004F042A /* Cells */,
 				47775C171F7D9B01004F042A /* VehiculeViewController.swift */,
 				47775C181F7D9B01004F042A /* VehiculeViewController.xib */,
 			);
@@ -263,6 +264,13 @@
 				47775C2F1F7DA80F004F042A /* AlertsViewModel.swift */,
 			);
 			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		47775C371F7DB9F6004F042A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		5C0D4CA27A6DD5DF71B01657 /* Frameworks */ = {

@@ -6,3 +6,17 @@ class VehiculeViewModel {
         self.repository = repository
     }
 }
+extension VehiculeViewModel {
+    var numberOfRows: Int {
+        return 6
+    }
+    func getDisclosureCellViewModel(index: Int) {
+        
+    }
+    func getSwitchCellViewModel(index: Int) {
+        
+    }
+    func getInfoCellViewModel(index: Int) {
+        
+    }
+}
