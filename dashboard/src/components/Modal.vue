@@ -12,7 +12,7 @@
         <slot></slot>
       </section>
       <footer class="modal-card-foot">
-        <button class="button is-success" v-on:click="accept">Save changes</button>
+        <button class="button" v-bind:class="acceptClass" v-on:click="accept">{{acceptButton}}</button>
       </footer>
     </div>
   </div>
@@ -23,7 +23,9 @@ export default {
   name: 'modal',
   props: [
     'title',
-    'shown'
+    'shown',
+    'acceptButton',
+    'acceptClass'
   ],
   data () {
     return {}

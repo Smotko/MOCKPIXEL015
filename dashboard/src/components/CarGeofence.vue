@@ -5,6 +5,8 @@
     <a v-if="enabled" class="button"  v-on:click="enabled = !enabled">Disable</a>
     <a v-else class="button" v-on:click="modalShown = true">Enable</a>
     <modal title="Set geofence"
+           acceptButton="Save"
+           acceptClass="is-primary"
            :shown="modalShown"
            v-on:cancel="modalShown = false"
            v-on:accept="modalDone">
