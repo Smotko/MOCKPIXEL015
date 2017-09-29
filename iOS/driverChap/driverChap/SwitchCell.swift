@@ -1,10 +1,10 @@
 import UIKit
 
 class SwitchCell: UITableViewCell {
-
+    
     @IBOutlet weak var switchValue: UISwitch!
     @IBOutlet weak var titleLabel: UILabel!
-    
+    //@IBOutlet weak var switchValue: UISwitch!
     var viewModel: SwitchCellViewModel? {
         didSet {
             updateContent()
