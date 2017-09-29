@@ -5,6 +5,7 @@
     <a class="button" v-on:click="toggle" v-if="!!buttonTexts[+active]">
       {{buttonTexts[+active]}}
     </a>
+    <slot></slot>
   </card>
 </template>
 
