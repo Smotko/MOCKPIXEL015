@@ -10,7 +10,7 @@ class VehiculeViewModel {
 }
 extension VehiculeViewModel {
     var numberOfRows: Int {
-        return 7
+        return 8
     }
     func getDisclosureCellViewModel(index: Int) -> DisclosureCellViewModel? {
         switch index {
@@ -36,6 +36,9 @@ extension VehiculeViewModel {
             return nil
         }
     }
+    func getFuelCellViewModel() -> FuelCellViewModel {
+        return FuelCellViewModel(percentage: car.fuelLevel)
+    }
     func getInfoCellViewModel(index: Int) -> InfoCellViewModel {
         return InfoCellViewModel(title: "Moving", isMoving: car.isMoving)
     }
@@ -47,6 +50,8 @@ extension VehiculeViewModel {
             return "disclosureCell"
         case 5:
             return "infoCell"
+        case 7:
+            return "fuelCell"
         default:
             return ""
         }

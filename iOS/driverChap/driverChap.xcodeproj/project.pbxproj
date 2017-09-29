@@ -27,6 +27,7 @@
 		4745AB441F7EE6A100961197 /* VehiculeCellsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB431F7EE6A100961197 /* VehiculeCellsDelegate.swift */; };
 		4745AB481F7EF0ED00961197 /* FuelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB461F7EF0ED00961197 /* FuelCell.swift */; };
 		4745AB491F7EF0ED00961197 /* FuelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4745AB471F7EF0ED00961197 /* FuelCell.xib */; };
+		4745AB4D1F7EFBF200961197 /* FuelCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB4C1F7EFBF200961197 /* FuelCellViewModel.swift */; };
 		47775BE61F7D844A004F042A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775BE51F7D844A004F042A /* AppDelegate.swift */; };
 		47775BE81F7D844A004F042A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775BE71F7D844A004F042A /* ViewController.swift */; };
 		47775BEB1F7D844A004F042A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47775BE91F7D844A004F042A /* Main.storyboard */; };
@@ -84,6 +85,7 @@
 		4745AB431F7EE6A100961197 /* VehiculeCellsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiculeCellsDelegate.swift; sourceTree = "<group>"; };
 		4745AB461F7EF0ED00961197 /* FuelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuelCell.swift; sourceTree = "<group>"; };
 		4745AB471F7EF0ED00961197 /* FuelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FuelCell.xib; sourceTree = "<group>"; };
+		4745AB4C1F7EFBF200961197 /* FuelCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuelCellViewModel.swift; sourceTree = "<group>"; };
 		47775BE21F7D844A004F042A /* driverChap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = driverChap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47775BE51F7D844A004F042A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47775BE71F7D844A004F042A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 		4745AB4B1F7EF0FA00961197 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4745AB4C1F7EFBF200961197 /* FuelCellViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -645,6 +648,7 @@
 				47775BE81F7D844A004F042A /* ViewController.swift in Sources */,
 				4745AB391F7E788300961197 /* InfoCellViewModel.swift in Sources */,
 				4745AB271F7E6F7A00961197 /* Router.swift in Sources */,
+				4745AB4D1F7EFBF200961197 /* FuelCellViewModel.swift in Sources */,
 				4745AB1A1F7E6D2500961197 /* DisclosureCell.swift in Sources */,
 				47775C211F7DA288004F042A /* VehiculeRepository.swift in Sources */,
 				47775C2D1F7DA7F5004F042A /* AlertsViewController.swift in Sources */,

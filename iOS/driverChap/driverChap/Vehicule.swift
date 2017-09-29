@@ -11,7 +11,9 @@ class Vehicule: Object {
     dynamic var isMoving = false
     dynamic var lock = false
     dynamic var isMobilized = false
+    dynamic var fuelLevel:Float = 0.6
     var pushNotifications = List<Alert>()
+    
     override static func primaryKey() -> String? {
         return "id"
     }

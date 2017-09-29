@@ -22,8 +22,11 @@ class VehiculeViewController: UIViewController {
         carTableView.register(UINib(nibName: "DisclosureCell", bundle: nil), forCellReuseIdentifier: "disclosureCell")
         carTableView.register(UINib(nibName: "SwitchCell", bundle: nil), forCellReuseIdentifier: "switchCell")
         carTableView.register(UINib(nibName: "InfoCell", bundle: nil), forCellReuseIdentifier: "infoCell")
+        carTableView.register(UINib(nibName: "FuelCell", bundle: nil), forCellReuseIdentifier: "fuelCell")
         carTableView.delegate = self
         carTableView.dataSource = self
+        carTableView.estimatedRowHeight = 100
+        carTableView.rowHeight = UITableViewAutomaticDimension
         carTableView.tableFooterView = UIView()
     }
     required init?(coder aDecoder: NSCoder) {
@@ -47,6 +50,9 @@ extension VehiculeViewController: UITableViewDelegate, UITableViewDataSource {
         case "infoCell":
             let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as? InfoCell
             return cell!
+        case "fuelCell":
+            let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as? FuelCell
+            return cell!
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as? DisclosureCell
             return cell!
@@ -62,12 +68,15 @@ extension VehiculeViewController: UITableViewDelegate, UITableViewDataSource {
         if let _cell = cell as? InfoCell {
             _cell.viewModel = viewModel.getInfoCellViewModel(index: indexPath.row)
         }
+        if let _cell = cell as? FuelCell {
+            _cell.viewModel = viewModel.getFuelCellViewModel()
+        }
     }
 }
 extension VehiculeViewController: VehiculeCellsDelegate {
     func changedSwitch(toState: Bool) {
         if toState {
-            let alert = UIAlertController(title: "Alert", message: "Are you sure", preferredStyle: UIAlertControllerStyle.alert)
+            let alert = UIAlertController(title: "Alert", message: "Are you sure?", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Continue", style: .default, handler: nil))
             alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: { _ in
                 self.carTableView.reloadData()
