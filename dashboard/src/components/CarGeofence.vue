@@ -1,9 +1,18 @@
 <template>
-
-  <card title="Geofence" v-bind:content="enabled ? 'Enabled' : 'Disabled'" v-bind:status="enabled ? 'is-primary' : ''">
-    <a v-if="enabled" class="button"  v-on:click="modalShown = true">Edit</a>
-    <a v-if="enabled" class="button"  v-on:click="enabled = !enabled">Disable</a>
-    <a v-else class="button" v-on:click="modalShown = true">Enable</a>
+  <toggler title="Geofence"
+           v-bind:statusTexts="['Enabled', 'Disabled']"
+           v-bind:statusStyles="['', 'is-primary']"
+           v-bind:buttonTexts="['Enable', 'Disable']"
+           v-bind:active="enabled"
+           v-bind:loading="loading"
+           v-on:toggled="onToggled">
+    <a class="button"
+       v-if="enabled && !loading"
+       v-bind:disabled="loading"
+       v-bind:style="{'is-loading': loading}"
+       v-on:click="modalShown = true">
+       Edit
+    </a>
     <modal title="Set geofence"
            acceptButton="Save"
            acceptClass="is-primary"
@@ -12,24 +21,26 @@
            v-on:accept="modalDone">
       <div id="map-canvas"></div>
     </modal>
-  </card>
-
+  </toggler>
 </template>
 
 <script>
 import Card from '@/components/Card'
 import Modal from '@/components/Modal'
+import Toggler from '@/components/Toggler'
 
 export default {
   name: 'cargeofence',
   components: {
     Card,
-    Modal
+    Modal,
+    Toggler
   },
   data () {
     return {
       modalShown: false,
-      enabled: false
+      enabled: false,
+      loading: false
     }
   },
   updated () {
@@ -39,6 +50,21 @@ export default {
     modalDone () {
       this.modalShown = false
       this.enabled = true
+      this.loading = true
+      setTimeout(() => {
+        this.loading = false
+      }, 400)
+    },
+    onToggled (value) {
+      if (value) {
+        this.modalShown = true
+      } else {
+        this.enabled = false
+        this.loading = true
+        setTimeout(() => {
+          this.loading = false
+        }, 400)
+      }
     }
   },
   mounted () {

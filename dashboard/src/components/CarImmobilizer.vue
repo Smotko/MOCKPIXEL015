@@ -4,6 +4,7 @@
              v-bind:statusStyles="['', 'is-danger']"
              v-bind:buttonTexts="['Engage', 'Disengage']"
              v-bind:active="immobilizer"
+             v-bind:loading="loading"
              v-on:toggled="toggle">
              <modal title="Confirm"
                     acceptButton="Engage immobilizer"
@@ -28,7 +29,8 @@ export default {
   data () {
     return {
       immobilizer: false,
-      modalShown: false
+      modalShown: false,
+      loading: false
     }
   },
   methods: {
@@ -36,12 +38,21 @@ export default {
       if (enabled) {
         this.modalShown = true
       } else {
+        this.loading = true
+        this.immobilizer = false
+        setTimeout(() => {
+          this.loading = false
+        }, 400)
         this.immobilizer = false
       }
     },
     modalDone () {
       this.immobilizer = true
       this.modalShown = false
+      this.loading = true
+      setTimeout(() => {
+        this.loading = false
+      }, 400)
     }
   }
 }

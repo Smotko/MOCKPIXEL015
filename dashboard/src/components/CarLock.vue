@@ -4,7 +4,8 @@
            v-bind:statusStyles="['', 'is-primary']"
            v-bind:buttonTexts="['Lock', 'Unlock']"
            v-bind:active="locked"
-           v-on:toggled="locked = !locked">
+           v-bind:loading="loading"
+           v-on:toggled="onToggled">
   </toggler>
 </template>
 
@@ -15,9 +16,20 @@ export default {
   components: {
     Toggler
   },
+  methods: {
+    onToggled () {
+      this.loading = true
+      this.locked = !this.locked
+      // Replace setTimeout with fetch request
+      setTimeout(() => {
+        this.loading = false
+      }, 500)
+    }
+  },
   data () {
     return {
-      locked: true
+      locked: true,
+      loading: false
     }
   }
 }

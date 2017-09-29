@@ -4,7 +4,8 @@
            v-bind:statusStyles="['is-warning', 'is-primary']"
            v-bind:buttonTexts="['Activate', 'Diactivate']"
            v-bind:active="tracking"
-           v-on:toggled="tracking = !tracking">
+           v-bind:loading="loading"
+           v-on:toggled="onToggled">
   </toggler>
 </template>
 
@@ -15,9 +16,20 @@ export default {
   components: {
     Toggler
   },
+  methods: {
+    onToggled () {
+      this.loading = true
+      this.tracking = !this.tracking
+      // Replace setTimeout with fetch request
+      setTimeout(() => {
+        this.loading = false
+      }, 500)
+    }
+  },
   data () {
     return {
-      tracking: false
+      tracking: false,
+      loading: false
     }
   }
 }
