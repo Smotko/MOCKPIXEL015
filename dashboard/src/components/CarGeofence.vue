@@ -1,6 +1,6 @@
 <template>
   <toggler title="Geofence"
-           v-bind:statusTexts="['Enabled', 'Disabled']"
+           v-bind:statusTexts="['Disabled', 'Enabled']"
            v-bind:statusStyles="['', 'is-primary']"
            v-bind:buttonTexts="['Enable', 'Disable']"
            v-bind:active="enabled"
