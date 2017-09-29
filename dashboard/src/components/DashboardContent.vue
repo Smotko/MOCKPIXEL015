@@ -2,9 +2,9 @@
   <div class="container is-fluid">
 
     <div class="tile is-ancestor">
-      <div v-if="!loading && car.connection.connected" class="tile is-vertical is-12">
+      <div v-if="!loading && car && car.connection.connected" class="tile is-vertical is-12">
         <div calss="tile">
-          <h1 class="title">Parental Controls</h1>
+          <h1 class="title">Parental controls</h1>
         </div>
         <div class="tile">
           <scheduler></scheduler>
@@ -13,8 +13,7 @@
             <event-item type="info" time="40m" info="Vehicle returned to geofence zone"></event-item>
             <event-item type="warning" time="2h" info="Mileage limit exceeded"></event-item>
             <event-item type="warning" time="2h" info="Vehicle left geofence"></event-item>
-            <event-item type="info" time="4h" info="Parental controls activated"></event-item>
-            <a href="#">More</a>
+            <more-events></more-events>
           </card>
         </div>
         <div class
@@ -44,7 +43,7 @@
           <card title="Issue" content="Server Offline" status="is-danger"></card>
         </div>
       </div>
-      <div v-else-if="!car.connection.connected" class="tile is-vertical is-12">
+      <div v-else-if="car && !car.connection.connected" class="tile is-vertical is-12">
         <div calss="tile">
           <card title="Car status" :content="'Disconnected since ' + car.connection.since" status="is-danger"></card>
         </div>
@@ -69,6 +68,7 @@ import EventItem from '@/components/EventItem'
 import Toggler from '@/components/Toggler'
 import Spinner from '@/components/Spinner'
 import Scheduler from '@/components/Scheduler'
+import MoreEvents from '@/components/MoreEvents'
 
 export default {
   name: 'dashboardcontent',
@@ -81,6 +81,7 @@ export default {
     CarTracking,
     CarImmobilizer,
     EventItem,
+    MoreEvents,
     Spinner,
     Scheduler,
     Toggler
@@ -88,7 +89,8 @@ export default {
   data () {
     return {
       loading: true,
-      serverIssue: false
+      serverIssue: false,
+      car: null
     }
   },
   mounted () {
