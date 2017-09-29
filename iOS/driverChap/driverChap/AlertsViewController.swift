@@ -1,7 +1,8 @@
 import UIKit
 
 class AlertsViewController: UIViewController {
-
+    
+    @IBOutlet weak var alertsTableView: UITableView!
     var viewModel: AlertsViewModel
     init(viewModel: AlertsViewModel) {
         self.viewModel = viewModel
@@ -12,10 +13,9 @@ class AlertsViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupLayout()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func setupLayout() {
+        alertsTableView.tableFooterView = UIView()
     }
 }

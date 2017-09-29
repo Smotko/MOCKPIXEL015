@@ -26,7 +26,7 @@ struct DependencyGraph: DependencyGraphProtocol {
                 let tabBarController = UITabBarController()
                 let vehiculeNC = UINavigationController()
                 let alertsNC = UINavigationController()
-                
+        
                 let vehiculeVC = r.resolve(VehiculeViewController.self)!
                 let alertsVC = r.resolve(AlertsViewController.self)!
                 

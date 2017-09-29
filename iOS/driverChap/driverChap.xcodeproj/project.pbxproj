@@ -21,6 +21,9 @@
 		4745AB351F7E786C00961197 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB331F7E786C00961197 /* InfoCell.swift */; };
 		4745AB361F7E786C00961197 /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4745AB341F7E786C00961197 /* InfoCell.xib */; };
 		4745AB391F7E788300961197 /* InfoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB381F7E788300961197 /* InfoCellViewModel.swift */; };
+		4745AB3D1F7EC14700961197 /* AlertCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB3B1F7EC14700961197 /* AlertCell.swift */; };
+		4745AB3E1F7EC14700961197 /* AlertCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4745AB3C1F7EC14700961197 /* AlertCell.xib */; };
+		4745AB421F7EC16000961197 /* AlertCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB411F7EC16000961197 /* AlertCellViewModel.swift */; };
 		47775BE61F7D844A004F042A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775BE51F7D844A004F042A /* AppDelegate.swift */; };
 		47775BE81F7D844A004F042A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775BE71F7D844A004F042A /* ViewController.swift */; };
 		47775BEB1F7D844A004F042A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47775BE91F7D844A004F042A /* Main.storyboard */; };
@@ -72,6 +75,9 @@
 		4745AB331F7E786C00961197 /* InfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
 		4745AB341F7E786C00961197 /* InfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoCell.xib; sourceTree = "<group>"; };
 		4745AB381F7E788300961197 /* InfoCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoCellViewModel.swift; sourceTree = "<group>"; };
+		4745AB3B1F7EC14700961197 /* AlertCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertCell.swift; sourceTree = "<group>"; };
+		4745AB3C1F7EC14700961197 /* AlertCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertCell.xib; sourceTree = "<group>"; };
+		4745AB411F7EC16000961197 /* AlertCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertCellViewModel.swift; sourceTree = "<group>"; };
 		47775BE21F7D844A004F042A /* driverChap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = driverChap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47775BE51F7D844A004F042A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47775BE71F7D844A004F042A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -204,6 +210,32 @@
 			name = ViewModel;
 			sourceTree = "<group>";
 		};
+		4745AB3A1F7EC0F100961197 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4745AB401F7EC15300961197 /* ViewModel */,
+				4745AB3F1F7EC14E00961197 /* View */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		4745AB3F1F7EC14E00961197 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4745AB3B1F7EC14700961197 /* AlertCell.swift */,
+				4745AB3C1F7EC14700961197 /* AlertCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4745AB401F7EC15300961197 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4745AB411F7EC16000961197 /* AlertCellViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
 		47775BD91F7D844A004F042A = {
 			isa = PBXGroup;
 			children = (
@@ -227,7 +259,7 @@
 		47775BE41F7D844A004F042A /* driverChap */ = {
 			isa = PBXGroup;
 			children = (
-				47775C281F7DA7CB004F042A /* PushNotifications */,
+				47775C281F7DA7CB004F042A /* Alerts */,
 				47775C1F1F7DA279004F042A /* Repository */,
 				47775C161F7D9AE8004F042A /* Vehicule */,
 				47775C111F7D903F004F042A /* Model */,
@@ -336,18 +368,19 @@
 			name = PushNotifications;
 			sourceTree = "<group>";
 		};
-		47775C281F7DA7CB004F042A /* PushNotifications */ = {
+		47775C281F7DA7CB004F042A /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
 				47775C2A1F7DA7E2004F042A /* ViewModel */,
 				47775C291F7DA7DE004F042A /* View */,
 			);
-			name = PushNotifications;
+			name = Alerts;
 			sourceTree = "<group>";
 		};
 		47775C291F7DA7DE004F042A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4745AB3A1F7EC0F100961197 /* Cells */,
 				47775C2B1F7DA7F5004F042A /* AlertsViewController.swift */,
 				47775C2C1F7DA7F5004F042A /* AlertsViewController.xib */,
 			);
@@ -469,6 +502,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47775BF01F7D844A004F042A /* LaunchScreen.storyboard in Resources */,
+				4745AB3E1F7EC14700961197 /* AlertCell.xib in Resources */,
 				4745AB361F7E786C00961197 /* InfoCell.xib in Resources */,
 				47775BED1F7D844A004F042A /* Assets.xcassets in Resources */,
 				4745AB1B1F7E6D2500961197 /* DisclosureCell.xib in Resources */,
@@ -559,7 +593,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4745AB3D1F7EC14700961197 /* AlertCell.swift in Sources */,
 				47775C341F7DA870004F042A /* APIPushNotificationsProvider.swift in Sources */,
+				4745AB421F7EC16000961197 /* AlertCellViewModel.swift in Sources */,
 				47775C151F7D93BA004F042A /* Alert.swift in Sources */,
 				47775C261F7DA320004F042A /* APIVehiculeTransformer.swift in Sources */,
 				47775C321F7DA85F004F042A /* PushNotificationsRepository.swift in Sources */,

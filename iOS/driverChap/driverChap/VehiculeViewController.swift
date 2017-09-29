@@ -8,7 +8,9 @@ class VehiculeViewController: UIViewController {
         super.viewDidLoad()
         setupLayout()
     }
-
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -22,6 +24,7 @@ class VehiculeViewController: UIViewController {
         carTableView.register(UINib(nibName: "InfoCell", bundle: nil), forCellReuseIdentifier: "infoCell")
         carTableView.delegate = self
         carTableView.dataSource = self
+        carTableView.tableFooterView = UIView()
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

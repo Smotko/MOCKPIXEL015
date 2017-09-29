@@ -6,7 +6,6 @@ class VehiculeViewModel {
     init(repository: VehiculeRepository) {
         self.repository = repository
         self.car = self.repository.getCar()
-        print(self.car)
     }
 }
 extension VehiculeViewModel {
@@ -31,7 +30,6 @@ extension VehiculeViewModel {
         return SwitchCellViewModel(title: "Lock", value: car.lock)
     }
     func getInfoCellViewModel(index: Int) -> InfoCellViewModel {
-        print(car.isMoving)
         return InfoCellViewModel(title: "Moving", isMoving: car.isMoving)
     }
     func cellIdentifier(index: Int) -> String {

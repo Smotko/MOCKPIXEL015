@@ -28,7 +28,6 @@ struct Router {
         var urlRequest = URLRequest(url: url.appendingPathComponent(self.getRelativePath()))
         //urlRequest.allHTTPHeaderFields = ["user-key": "4320ca1f3eb10513657eed84e055b6ab"]
         urlRequest.httpMethod = Alamofire.HTTPMethod.post.rawValue
-        print("URL Request: \(urlRequest)")
         return try! Alamofire.JSONEncoding.default.encode(urlRequest)
     }
 }
