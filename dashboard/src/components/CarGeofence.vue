@@ -1,49 +1,74 @@
 <template>
-  <card title="Geofence" v-bind:content="enabled ? 'Enabled' : 'Disabled'" v-bind:status="enabled ? 'is-primary' : ''">
-    <a v-if="enabled" class="button"  v-on:click="enabled = !enabled">Disable</a>
-    <a v-else="enabled" class="button" v-on:click="modalShown = true">Enable</a>
-    <div class="modal" v-bind:class="{ 'is-active': modalShown }">
-      <div class="modal-background" v-on:click="modalShown = false"></div>
-      <div class="modal-content">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Set geofence</p>
-          <button class="delete" aria-label="close" v-on:click="modalShown = false"></button>
-        </header>
-        <section class="modal-card-body">
-          <div id="map-canvas"></div>
-        </section>
-        <footer class="modal-card-foot">
-          <button class="button is-success" v-on:click="enabled = true; modalShown = false">Save changes</button>
-        </footer>
-      </div>
-    </div>
-  </card>
+  <toggler title="Geofence"
+           v-bind:statusTexts="['Enabled', 'Disabled']"
+           v-bind:statusStyles="['', 'is-primary']"
+           v-bind:buttonTexts="['Enable', 'Disable']"
+           v-bind:active="enabled"
+           v-bind:loading="loading"
+           v-on:toggled="onToggled">
+    <a class="button"
+       v-if="enabled && !loading"
+       v-bind:disabled="loading"
+       v-bind:style="{'is-loading': loading}"
+       v-on:click="modalShown = true">
+       Edit
+    </a>
+    <modal title="Set geofence"
+           acceptButton="Save"
+           acceptClass="is-primary"
+           :shown="modalShown"
+           v-on:cancel="modalShown = false"
+           v-on:accept="modalDone">
+      <div id="map-canvas"></div>
+    </modal>
+  </toggler>
 </template>
 
 <script>
 import Card from '@/components/Card'
+import Modal from '@/components/Modal'
+import Toggler from '@/components/Toggler'
 
 export default {
   name: 'cargeofence',
   components: {
-    Card
-  },
-  props: {
-    enabled: {
-      type: Boolean,
-      default: true
-    }
+    Card,
+    Modal,
+    Toggler
   },
   data () {
     return {
-      modalShown: false
+      modalShown: false,
+      enabled: false,
+      loading: false
     }
   },
   updated () {
     window.google.maps.event.trigger(this.map, 'resize')
   },
+  methods: {
+    modalDone () {
+      this.modalShown = false
+      this.enabled = true
+      this.loading = true
+      setTimeout(() => {
+        this.loading = false
+      }, 400)
+    },
+    onToggled (value) {
+      if (value) {
+        this.modalShown = true
+      } else {
+        this.enabled = false
+        this.loading = true
+        setTimeout(() => {
+          this.loading = false
+        }, 400)
+      }
+    }
+  },
   mounted () {
-    // Map Center
+    // TODO: remove the global google variable
     var google = window.google
     var myLatLng = new google.maps.LatLng(38.96502, -9.64162)
     // General Options

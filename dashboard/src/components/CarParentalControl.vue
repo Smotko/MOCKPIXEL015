@@ -1,16 +1,18 @@
 <template>
-  <card title="Parental control" v-bind:content="enabled ? 'On' : 'Off'" v-bind:status="enabled ? 'is-primary' : 'is-warning'">
-    <a v-if="enabled" class="button"  v-on:click="enabled = !enabled">Turn Off</a>
-    <a v-else="enabled" class="button" v-on:click="enabled = !enabled">Turn On</a>
-  </card>
+  <toggler title="Parental controls"
+           v-bind:statusTexts="['Off', 'On']"
+           v-bind:statusStyles="['is-warning', 'is-primary']"
+           v-bind:buttonTexts="['Turn On', 'Turn Off']"
+           v-bind:initialState="false">
+  </toggler>
 </template>
 
 <script>
-import Card from '@/components/Card'
+import Toggler from '@/components/Toggler'
 export default {
   name: 'carparentalcontrol',
   components: {
-    Card
+    Toggler
   },
   props: {
     enabled: {

@@ -1,25 +1,36 @@
 <template>
-  <card title="Car status" v-bind:content="locked ? 'Locked' : 'Unlocked'" v-bind:status="locked ? 'is-primary' : ''">
-    <a v-if="locked" class="button"  v-on:click="locked = !locked">Unlock</a>
-    <a v-else="locked" class="button" v-on:click="locked = !locked">Lock</a>
-  </card>
+  <toggler title="Car doors"
+           v-bind:statusTexts="['Unlocked', 'Locked']"
+           v-bind:statusStyles="['', 'is-primary']"
+           v-bind:buttonTexts="['Lock', 'Unlock']"
+           v-bind:active="locked"
+           v-bind:loading="loading"
+           v-on:toggled="onToggled">
+  </toggler>
 </template>
 
 <script>
-import Card from '@/components/Card'
+import Toggler from '@/components/Toggler'
 export default {
   name: 'carlock',
   components: {
-    Card
+    Toggler
   },
-  props: {
-    locked: {
-      type: Boolean,
-      default: true
+  methods: {
+    onToggled () {
+      this.loading = true
+      this.locked = !this.locked
+      // Replace setTimeout with fetch request
+      setTimeout(() => {
+        this.loading = false
+      }, 500)
     }
   },
   data () {
-    return {}
+    return {
+      locked: true,
+      loading: false
+    }
   }
 }
 </script>
