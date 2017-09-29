@@ -1,7 +1,9 @@
 <template>
+
   <card title="Geofence" v-bind:content="enabled ? 'Enabled' : 'Disabled'" v-bind:status="enabled ? 'is-primary' : ''">
+    <a v-if="enabled" class="button"  v-on:click="modalShown = true">Edit</a>
     <a v-if="enabled" class="button"  v-on:click="enabled = !enabled">Disable</a>
-    <a v-else="enabled" class="button" v-on:click="modalShown = true">Enable</a>
+    <a v-else class="button" v-on:click="modalShown = true">Enable</a>
     <div class="modal" v-bind:class="{ 'is-active': modalShown }">
       <div class="modal-background" v-on:click="modalShown = false"></div>
       <div class="modal-content">
@@ -18,6 +20,7 @@
       </div>
     </div>
   </card>
+
 </template>
 
 <script>
@@ -29,14 +32,15 @@ export default {
     Card
   },
   props: {
-    enabled: {
+    initialState: {
       type: Boolean,
       default: true
     }
   },
   data () {
     return {
-      modalShown: false
+      modalShown: false,
+      enabled: this.initialState
     }
   },
   updated () {

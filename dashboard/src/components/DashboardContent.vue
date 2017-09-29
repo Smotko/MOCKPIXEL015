@@ -7,9 +7,9 @@
           <h1 class="title">Car controls</h1>
         </div>
         <div class="tile">
-          <CarParentalControl v-bind:enabled="false"></CarParentalControl>
-          <CarLock v-bind:locked="false"></CarLock>
-          <CarGeofence v-bind:enabled="false"></CarGeofence>
+          <CarParentalControl v-bind:initialState="false"></CarParentalControl>
+          <CarLock v-bind:initialState="false"></CarLock>
+          <CarGeofence v-bind:initialState="false"></CarGeofence>
         </div>
         <div class="tile">
           <h1 class="title">Car overview</h1>
