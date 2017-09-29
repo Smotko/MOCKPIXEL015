@@ -4,50 +4,43 @@
     <a v-if="enabled" class="button"  v-on:click="modalShown = true">Edit</a>
     <a v-if="enabled" class="button"  v-on:click="enabled = !enabled">Disable</a>
     <a v-else class="button" v-on:click="modalShown = true">Enable</a>
-    <div class="modal" v-bind:class="{ 'is-active': modalShown }">
-      <div class="modal-background" v-on:click="modalShown = false"></div>
-      <div class="modal-content">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Set geofence</p>
-          <button class="delete" aria-label="close" v-on:click="modalShown = false"></button>
-        </header>
-        <section class="modal-card-body">
-          <div id="map-canvas"></div>
-        </section>
-        <footer class="modal-card-foot">
-          <button class="button is-success" v-on:click="enabled = true; modalShown = false">Save changes</button>
-        </footer>
-      </div>
-    </div>
+    <modal title="Set geofence"
+           :shown="modalShown"
+           v-on:cancel="modalShown = false"
+           v-on:accept="modalDone">
+      <div id="map-canvas"></div>
+    </modal>
   </card>
 
 </template>
 
 <script>
 import Card from '@/components/Card'
+import Modal from '@/components/Modal'
 
 export default {
   name: 'cargeofence',
   components: {
-    Card
-  },
-  props: {
-    initialState: {
-      type: Boolean,
-      default: true
-    }
+    Card,
+    Modal
   },
   data () {
     return {
       modalShown: false,
-      enabled: this.initialState
+      enabled: false
     }
   },
   updated () {
     window.google.maps.event.trigger(this.map, 'resize')
   },
+  methods: {
+    modalDone () {
+      this.modalShown = false
+      this.enabled = true
+    }
+  },
   mounted () {
-    // Map Center
+    // TODO: remove the global google variable
     var google = window.google
     var myLatLng = new google.maps.LatLng(38.96502, -9.64162)
     // General Options
