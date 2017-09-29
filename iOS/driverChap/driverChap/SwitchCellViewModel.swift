@@ -2,9 +2,9 @@ import Foundation
 
 struct SwitchCellViewModel {
     let title: String
-    let value: Int
+    let value: Bool
     
-    init(title: String, value: Int) {
+    init(title: String, value: Bool) {
         self.title = title
         self.value = value
     }
@@ -12,6 +12,6 @@ struct SwitchCellViewModel {
         return title
     }
     var switchState: Bool {
-        return value == 0 ? false : true
+        return value
     }
 }

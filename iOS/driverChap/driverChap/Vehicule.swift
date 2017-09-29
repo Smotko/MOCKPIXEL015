@@ -9,6 +9,7 @@ class Vehicule: Object {
     dynamic var speedLimit = 0
     dynamic var miles = 0
     dynamic var isMoving = false
+    dynamic var lock = false
     var pushNotifications = List<Alert>()
     override static func primaryKey() -> String? {
         return "id"

@@ -2,8 +2,8 @@ import Foundation
 
 struct InfoCellViewModel {
     let title: String
-    let isMoving: Int
-    init(title: String, isMoving: Int) {
+    let isMoving: Bool
+    init(title: String, isMoving: Bool) {
         self.title = title
         self.isMoving = isMoving
     }
@@ -11,6 +11,6 @@ struct InfoCellViewModel {
         return title
     }
     var isCarMoving: Bool {
-        return isMoving == 0 ? false : true
+        return isMoving
     }
 }

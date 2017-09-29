@@ -10,7 +10,8 @@ struct APIVehiculeProvider {
         car.timer = 20
         car.speedLimit = 50
         car.miles = 300
-        car.isMoving = false
+        car.isMoving = true
+        car.lock = true
         return car
     }
     func getIsMoving(){}

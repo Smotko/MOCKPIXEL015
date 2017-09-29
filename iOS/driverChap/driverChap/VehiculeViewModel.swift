@@ -18,20 +18,21 @@ extension VehiculeViewModel {
         case 1:
             return DisclosureCellViewModel(title: "Geo", value: "Geo Value")
         case 2:
-            return DisclosureCellViewModel(title: "Speed Limit", value: "Limit")
+            return DisclosureCellViewModel(title: "Speed Limit", value: String(car.speedLimit))
         case 3:
-            return DisclosureCellViewModel(title: "Miles", value: "Value")
+            return DisclosureCellViewModel(title: "Miles", value: String(car.miles))
         case 4:
-            return DisclosureCellViewModel(title: "Timer", value: "150 minutes")
+            return DisclosureCellViewModel(title: "Timer", value: String(car.timer))
         default:
             return DisclosureCellViewModel(title: "Geo", value: "Geo Value")
         }
     }
     func getSwitchCellViewModel(index: Int) -> SwitchCellViewModel {
-        return SwitchCellViewModel(title: "Lock", value: 0)
+        return SwitchCellViewModel(title: "Lock", value: car.lock)
     }
     func getInfoCellViewModel(index: Int) -> InfoCellViewModel {
-        return InfoCellViewModel(title: "Moving", isMoving: 1)
+        print(car.isMoving)
+        return InfoCellViewModel(title: "Moving", isMoving: car.isMoving)
     }
     func cellIdentifier(index: Int) -> String {
         switch index {
