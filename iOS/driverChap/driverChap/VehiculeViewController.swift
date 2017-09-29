@@ -18,7 +18,7 @@ class VehiculeViewController: UIViewController {
     }
     func setupLayout() {
         carTableView.register(UINib(nibName: "DisclosureCell", bundle: nil), forCellReuseIdentifier: "disclosureCell")
-        carTableView.register(UINib(nibName: "Switch", bundle: nil), forCellReuseIdentifier: "switchCell")
+        carTableView.register(UINib(nibName: "SwitchCell", bundle: nil), forCellReuseIdentifier: "switchCell")
         carTableView.register(UINib(nibName: "InfoCell", bundle: nil), forCellReuseIdentifier: "infoCell")
         carTableView.delegate = self
         carTableView.dataSource = self

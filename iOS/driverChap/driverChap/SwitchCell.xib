@@ -37,9 +37,8 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="switch" destination="4d6-2E-5sv" id="Q8F-Dc-KnY"/>
-                <outlet property="switchValue" destination="4d6-2E-5sv" id="Vcm-6F-bIX"/>
-                <outlet property="titleLabel" destination="1O1-aQ-OOT" id="cuC-Mk-Bi7"/>
+                <outlet property="switchValue" destination="4d6-2E-5sv" id="IQI-mV-eR9"/>
+                <outlet property="titleLabel" destination="1O1-aQ-OOT" id="Ium-Fh-Fno"/>
             </connections>
         </tableViewCell>
     </objects>
