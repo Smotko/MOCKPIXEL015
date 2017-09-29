@@ -1,0 +1,13 @@
+platform :ios, '9.0'
+
+use_frameworks!
+
+target ‘driverChap’ do
+    pod 'Realm'
+    pod 'RealmSwift'
+    pod 'Alamofire'
+    pod 'RxSwift'
+    pod 'SwiftyJSON'
+    pod 'Swinject', '~> 2.1.0'
+    pod 'KVNProgress', git: 'git@github.com:mobilejohnw/KVNProgress.git', branch: 'master', submodules: true
+end
