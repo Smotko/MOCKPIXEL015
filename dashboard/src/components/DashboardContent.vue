@@ -7,13 +7,13 @@
           <h1 class="title">Car controls</h1>
         </div>
         <div class="tile">
-          <CarTracking></CarTracking>
-          <CarLock></CarLock>
-          <CarGeofence v-bind:initialState="false"></CarGeofence>
+          <car-tracking></car-tracking>
+          <car-lock></car-lock>
+          <car-geofence v-bind:initialState="false"></car-geofence>
         </div>
         <div class="tile">
-          <CarImmobilizer></CarImmobilizer>
-          <CarBlinkers></CarBlinkers>
+          <car-immobilizer></car-immobilizer>
+          <car-blinkers></car-blinkers>
         </div>
         <div class="tile">
           <h1 class="title">Car overview</h1>

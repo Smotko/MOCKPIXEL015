@@ -1,7 +1,7 @@
 <template>
   <div>
-    <NavBar></NavBar>
-    <DashboardContent></DashboardContent>
+    <nav-bar></nav-bar>
+    <dashboard-content></dashboard-content>
   </div>
 </template>
 
