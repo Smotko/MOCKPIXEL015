@@ -39,6 +39,7 @@ extension VehiculeViewController: UITableViewDelegate, UITableViewDataSource {
         switch identifier {
         case "switchCell":
             let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as? SwitchCell
+            cell?.delegate = self
             return cell!
         case "disclosureCell":
             let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as? DisclosureCell
@@ -61,5 +62,18 @@ extension VehiculeViewController: UITableViewDelegate, UITableViewDataSource {
         if let _cell = cell as? InfoCell {
             _cell.viewModel = viewModel.getInfoCellViewModel(index: indexPath.row)
         }
+    }
+}
+extension VehiculeViewController: VehiculeCellsDelegate {
+    func changedSwitch(toState: Bool) {
+        if toState {
+            let alert = UIAlertController(title: "Alert", message: "Are you sure", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Continue", style: .default, handler: nil))
+            alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: { _ in
+                self.carTableView.reloadData()
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
+
     }
 }

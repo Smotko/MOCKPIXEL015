@@ -4,7 +4,7 @@ class SwitchCell: UITableViewCell {
     
     @IBOutlet weak var switchValue: UISwitch!
     @IBOutlet weak var titleLabel: UILabel!
-    //@IBOutlet weak var switchValue: UISwitch!
+    var delegate: VehiculeCellsDelegate?
     var viewModel: SwitchCellViewModel? {
         didSet {
             updateContent()
@@ -23,6 +23,9 @@ class SwitchCell: UITableViewCell {
         }
         titleLabel.text = _viewModel.titleLabel
         switchValue.isOn = _viewModel.switchState
+    }
+    @IBAction func switchChanged(_ sender: Any) {
+        delegate?.changedSwitch(toState: switchValue.isOn)
     }
     
 }

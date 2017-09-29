@@ -24,6 +24,9 @@
 		4745AB3D1F7EC14700961197 /* AlertCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB3B1F7EC14700961197 /* AlertCell.swift */; };
 		4745AB3E1F7EC14700961197 /* AlertCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4745AB3C1F7EC14700961197 /* AlertCell.xib */; };
 		4745AB421F7EC16000961197 /* AlertCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB411F7EC16000961197 /* AlertCellViewModel.swift */; };
+		4745AB441F7EE6A100961197 /* VehiculeCellsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB431F7EE6A100961197 /* VehiculeCellsDelegate.swift */; };
+		4745AB481F7EF0ED00961197 /* FuelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB461F7EF0ED00961197 /* FuelCell.swift */; };
+		4745AB491F7EF0ED00961197 /* FuelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4745AB471F7EF0ED00961197 /* FuelCell.xib */; };
 		47775BE61F7D844A004F042A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775BE51F7D844A004F042A /* AppDelegate.swift */; };
 		47775BE81F7D844A004F042A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775BE71F7D844A004F042A /* ViewController.swift */; };
 		47775BEB1F7D844A004F042A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47775BE91F7D844A004F042A /* Main.storyboard */; };
@@ -78,6 +81,9 @@
 		4745AB3B1F7EC14700961197 /* AlertCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertCell.swift; sourceTree = "<group>"; };
 		4745AB3C1F7EC14700961197 /* AlertCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertCell.xib; sourceTree = "<group>"; };
 		4745AB411F7EC16000961197 /* AlertCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertCellViewModel.swift; sourceTree = "<group>"; };
+		4745AB431F7EE6A100961197 /* VehiculeCellsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiculeCellsDelegate.swift; sourceTree = "<group>"; };
+		4745AB461F7EF0ED00961197 /* FuelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuelCell.swift; sourceTree = "<group>"; };
+		4745AB471F7EF0ED00961197 /* FuelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FuelCell.xib; sourceTree = "<group>"; };
 		47775BE21F7D844A004F042A /* driverChap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = driverChap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47775BE51F7D844A004F042A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47775BE71F7D844A004F042A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -232,6 +238,31 @@
 			isa = PBXGroup;
 			children = (
 				4745AB411F7EC16000961197 /* AlertCellViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		4745AB451F7EF0D000961197 /* FuelCell */ = {
+			isa = PBXGroup;
+			children = (
+				4745AB4B1F7EF0FA00961197 /* ViewModel */,
+				4745AB4A1F7EF0F400961197 /* View */,
+			);
+			name = FuelCell;
+			sourceTree = "<group>";
+		};
+		4745AB4A1F7EF0F400961197 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4745AB461F7EF0ED00961197 /* FuelCell.swift */,
+				4745AB471F7EF0ED00961197 /* FuelCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4745AB4B1F7EF0FA00961197 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -398,9 +429,11 @@
 		47775C371F7DB9F6004F042A /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				4745AB451F7EF0D000961197 /* FuelCell */,
 				4745AB171F7E6CE600961197 /* InfoCell */,
 				4745AB161F7E6CDE00961197 /* SwitchCell */,
 				4745AB151F7E6CD700961197 /* DisclosureCell */,
+				4745AB431F7EE6A100961197 /* VehiculeCellsDelegate.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -504,6 +537,7 @@
 				47775BF01F7D844A004F042A /* LaunchScreen.storyboard in Resources */,
 				4745AB3E1F7EC14700961197 /* AlertCell.xib in Resources */,
 				4745AB361F7E786C00961197 /* InfoCell.xib in Resources */,
+				4745AB491F7EF0ED00961197 /* FuelCell.xib in Resources */,
 				47775BED1F7D844A004F042A /* Assets.xcassets in Resources */,
 				4745AB1B1F7E6D2500961197 /* DisclosureCell.xib in Resources */,
 				47775BEB1F7D844A004F042A /* Main.storyboard in Resources */,
@@ -601,6 +635,7 @@
 				47775C321F7DA85F004F042A /* PushNotificationsRepository.swift in Sources */,
 				4745AB1F1F7E6D3B00961197 /* DisclosureCellViewModel.swift in Sources */,
 				4745AB351F7E786C00961197 /* InfoCell.swift in Sources */,
+				4745AB481F7EF0ED00961197 /* FuelCell.swift in Sources */,
 				4745AB211F7E6E2000961197 /* DependencyInjection.swift in Sources */,
 				47775C241F7DA304004F042A /* APIVehiculeProvider.swift in Sources */,
 				47775C361F7DA882004F042A /* APIPushNotificationsTransformer.swift in Sources */,
@@ -618,6 +653,7 @@
 				47775BE61F7D844A004F042A /* AppDelegate.swift in Sources */,
 				47775C1E1F7D9B5F004F042A /* VehiculeViewModel.swift in Sources */,
 				4745AB231F7E6EC500961197 /* DependencyGraphProtocol.swift in Sources */,
+				4745AB441F7EE6A100961197 /* VehiculeCellsDelegate.swift in Sources */,
 				47775C301F7DA80F004F042A /* AlertsViewModel.swift in Sources */,
 				47775C131F7D906F004F042A /* Vehicule.swift in Sources */,
 			);
