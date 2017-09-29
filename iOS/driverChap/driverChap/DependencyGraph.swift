@@ -34,7 +34,7 @@ struct DependencyGraph: DependencyGraphProtocol {
                 vehiculeVC.title = "car"
                 
                 alertsNC.addChildViewController(alertsVC)
-                alertsVC.title = "Alerts"
+                alertsVC.title = "alerts"
                 
                 vehiculeNC.tabBarItem.image = UIImage(named: "tab_vehicule")
                 alertsNC.tabBarItem.image = UIImage(named: "tab_alert")

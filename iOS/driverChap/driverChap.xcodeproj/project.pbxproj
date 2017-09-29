@@ -15,6 +15,12 @@
 		4745AB251F7E6EEC00961197 /* DependencyGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB241F7E6EEC00961197 /* DependencyGraph.swift */; };
 		4745AB271F7E6F7A00961197 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB261F7E6F7A00961197 /* Router.swift */; };
 		4745AB291F7E6FF700961197 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB281F7E6FF700961197 /* RequestHandler.swift */; };
+		4745AB2C1F7E752F00961197 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB2A1F7E752F00961197 /* SwitchCell.swift */; };
+		4745AB2D1F7E752F00961197 /* SwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4745AB2B1F7E752F00961197 /* SwitchCell.xib */; };
+		4745AB311F7E754700961197 /* SwitchCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB301F7E754700961197 /* SwitchCellViewModel.swift */; };
+		4745AB351F7E786C00961197 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB331F7E786C00961197 /* InfoCell.swift */; };
+		4745AB361F7E786C00961197 /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4745AB341F7E786C00961197 /* InfoCell.xib */; };
+		4745AB391F7E788300961197 /* InfoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB381F7E788300961197 /* InfoCellViewModel.swift */; };
 		47775BE61F7D844A004F042A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775BE51F7D844A004F042A /* AppDelegate.swift */; };
 		47775BE81F7D844A004F042A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775BE71F7D844A004F042A /* ViewController.swift */; };
 		47775BEB1F7D844A004F042A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47775BE91F7D844A004F042A /* Main.storyboard */; };
@@ -60,6 +66,12 @@
 		4745AB241F7E6EEC00961197 /* DependencyGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyGraph.swift; sourceTree = "<group>"; };
 		4745AB261F7E6F7A00961197 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4745AB281F7E6FF700961197 /* RequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		4745AB2A1F7E752F00961197 /* SwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
+		4745AB2B1F7E752F00961197 /* SwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchCell.xib; sourceTree = "<group>"; };
+		4745AB301F7E754700961197 /* SwitchCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCellViewModel.swift; sourceTree = "<group>"; };
+		4745AB331F7E786C00961197 /* InfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		4745AB341F7E786C00961197 /* InfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoCell.xib; sourceTree = "<group>"; };
+		4745AB381F7E788300961197 /* InfoCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoCellViewModel.swift; sourceTree = "<group>"; };
 		47775BE21F7D844A004F042A /* driverChap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = driverChap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47775BE51F7D844A004F042A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47775BE71F7D844A004F042A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +138,8 @@
 		4745AB161F7E6CDE00961197 /* SwitchCell */ = {
 			isa = PBXGroup;
 			children = (
+				4745AB2F1F7E753A00961197 /* ViewModel */,
+				4745AB2E1F7E753500961197 /* View */,
 			);
 			name = SwitchCell;
 			sourceTree = "<group>";
@@ -133,6 +147,8 @@
 		4745AB171F7E6CE600961197 /* InfoCell */ = {
 			isa = PBXGroup;
 			children = (
+				4745AB371F7E787000961197 /* ViewModel */,
+				4745AB321F7E785200961197 /* View */,
 			);
 			name = InfoCell;
 			sourceTree = "<group>";
@@ -150,6 +166,40 @@
 			isa = PBXGroup;
 			children = (
 				4745AB1E1F7E6D3B00961197 /* DisclosureCellViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		4745AB2E1F7E753500961197 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4745AB2A1F7E752F00961197 /* SwitchCell.swift */,
+				4745AB2B1F7E752F00961197 /* SwitchCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4745AB2F1F7E753A00961197 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4745AB301F7E754700961197 /* SwitchCellViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		4745AB321F7E785200961197 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4745AB331F7E786C00961197 /* InfoCell.swift */,
+				4745AB341F7E786C00961197 /* InfoCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4745AB371F7E787000961197 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4745AB381F7E788300961197 /* InfoCellViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -419,10 +469,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				47775BF01F7D844A004F042A /* LaunchScreen.storyboard in Resources */,
+				4745AB361F7E786C00961197 /* InfoCell.xib in Resources */,
 				47775BED1F7D844A004F042A /* Assets.xcassets in Resources */,
 				4745AB1B1F7E6D2500961197 /* DisclosureCell.xib in Resources */,
 				47775BEB1F7D844A004F042A /* Main.storyboard in Resources */,
 				47775C1A1F7D9B01004F042A /* VehiculeViewController.xib in Resources */,
+				4745AB2D1F7E752F00961197 /* SwitchCell.xib in Resources */,
 				47775C2E1F7DA7F5004F042A /* AlertsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,11 +564,15 @@
 				47775C261F7DA320004F042A /* APIVehiculeTransformer.swift in Sources */,
 				47775C321F7DA85F004F042A /* PushNotificationsRepository.swift in Sources */,
 				4745AB1F1F7E6D3B00961197 /* DisclosureCellViewModel.swift in Sources */,
+				4745AB351F7E786C00961197 /* InfoCell.swift in Sources */,
 				4745AB211F7E6E2000961197 /* DependencyInjection.swift in Sources */,
 				47775C241F7DA304004F042A /* APIVehiculeProvider.swift in Sources */,
 				47775C361F7DA882004F042A /* APIPushNotificationsTransformer.swift in Sources */,
 				4745AB251F7E6EEC00961197 /* DependencyGraph.swift in Sources */,
+				4745AB2C1F7E752F00961197 /* SwitchCell.swift in Sources */,
+				4745AB311F7E754700961197 /* SwitchCellViewModel.swift in Sources */,
 				47775BE81F7D844A004F042A /* ViewController.swift in Sources */,
+				4745AB391F7E788300961197 /* InfoCellViewModel.swift in Sources */,
 				4745AB271F7E6F7A00961197 /* Router.swift in Sources */,
 				4745AB1A1F7E6D2500961197 /* DisclosureCell.swift in Sources */,
 				47775C211F7DA288004F042A /* VehiculeRepository.swift in Sources */,
