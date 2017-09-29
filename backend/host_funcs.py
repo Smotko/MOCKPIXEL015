@@ -16,22 +16,22 @@ def set_lockAPI():
     return jsonify(set_lock(request.json['lock'])), 200
 
 @app.route('/api/set_immobilizer', methods=['POST'])
-def set_lockAPI():
+def set_immobilizerAPI():
     if not request.json or not 'immobilizer' in request.json:
         return "Error", 400
     return jsonify(set_immobilizer(request.json['immobilizer'])), 200
 
 @app.route('/api/set_tracking', methods=['POST'])
-def set_lockAPI():
+def set_trackingAPI():
     if not request.json or not 'tracking' in request.json:
         return "Error", 400
     return jsonify(set_tracking(request.json['tracking'])), 200
 
-@app.route('/api/set_lock', methods=['POST'])
-def set_lockAPI():
-    if not request.json or not 'lock' in request.json:
+@app.route('/api/set_geoFence', methods=['POST'])
+def set_geoFenceAPI():
+    if not request.json or not 'fence' in request.json:
         return "Error", 400
-    return jsonify(set_lock(request.json['lock'])), 200
+    return jsonify(set_geoFence(request.json['fence'])), 200
 
 
 @app.route('/api/get_car', methods=['GET'])
