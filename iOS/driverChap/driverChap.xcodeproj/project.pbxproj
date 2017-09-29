@@ -7,17 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4745AB1A1F7E6D2500961197 /* DisclosureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB181F7E6D2500961197 /* DisclosureCell.swift */; };
+		4745AB1B1F7E6D2500961197 /* DisclosureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4745AB191F7E6D2500961197 /* DisclosureCell.xib */; };
+		4745AB1F1F7E6D3B00961197 /* DisclosureCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB1E1F7E6D3B00961197 /* DisclosureCellViewModel.swift */; };
+		4745AB211F7E6E2000961197 /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB201F7E6E2000961197 /* DependencyInjection.swift */; };
+		4745AB231F7E6EC500961197 /* DependencyGraphProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB221F7E6EC500961197 /* DependencyGraphProtocol.swift */; };
+		4745AB251F7E6EEC00961197 /* DependencyGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB241F7E6EEC00961197 /* DependencyGraph.swift */; };
+		4745AB271F7E6F7A00961197 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB261F7E6F7A00961197 /* Router.swift */; };
+		4745AB291F7E6FF700961197 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745AB281F7E6FF700961197 /* RequestHandler.swift */; };
 		47775BE61F7D844A004F042A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775BE51F7D844A004F042A /* AppDelegate.swift */; };
 		47775BE81F7D844A004F042A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775BE71F7D844A004F042A /* ViewController.swift */; };
 		47775BEB1F7D844A004F042A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47775BE91F7D844A004F042A /* Main.storyboard */; };
 		47775BED1F7D844A004F042A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47775BEC1F7D844A004F042A /* Assets.xcassets */; };
 		47775BF01F7D844A004F042A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47775BEE1F7D844A004F042A /* LaunchScreen.storyboard */; };
 		47775BFB1F7D844A004F042A /* driverChapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775BFA1F7D844A004F042A /* driverChapTests.swift */; };
-		47775C081F7D8673004F042A /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C061F7D8673004F042A /* RequestHandler.swift */; };
-		47775C091F7D8673004F042A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C071F7D8673004F042A /* Router.swift */; };
-		47775C0E1F7D86B4004F042A /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C0B1F7D86B4004F042A /* DependencyInjection.swift */; };
-		47775C0F1F7D86B4004F042A /* DependencyGraphProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C0C1F7D86B4004F042A /* DependencyGraphProtocol.swift */; };
-		47775C101F7D86B4004F042A /* DependencyGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C0D1F7D86B4004F042A /* DependencyGraph.swift */; };
 		47775C131F7D906F004F042A /* Vehicule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C121F7D906F004F042A /* Vehicule.swift */; };
 		47775C151F7D93BA004F042A /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C141F7D93BA004F042A /* Alert.swift */; };
 		47775C191F7D9B01004F042A /* VehiculeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47775C171F7D9B01004F042A /* VehiculeViewController.swift */; };
@@ -49,6 +52,14 @@
 		1B3DA472DA93C34F2A8F7E72 /* Pods-driverChap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driverChap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-driverChap/Pods-driverChap.debug.xcconfig"; sourceTree = "<group>"; };
 		2829DBDBD46A07EF4442944A /* Pods_driverChap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_driverChap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B9AAE2594763AD0865BCCA /* Pods-driverChap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driverChap.release.xcconfig"; path = "Pods/Target Support Files/Pods-driverChap/Pods-driverChap.release.xcconfig"; sourceTree = "<group>"; };
+		4745AB181F7E6D2500961197 /* DisclosureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisclosureCell.swift; sourceTree = "<group>"; };
+		4745AB191F7E6D2500961197 /* DisclosureCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisclosureCell.xib; sourceTree = "<group>"; };
+		4745AB1E1F7E6D3B00961197 /* DisclosureCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisclosureCellViewModel.swift; sourceTree = "<group>"; };
+		4745AB201F7E6E2000961197 /* DependencyInjection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
+		4745AB221F7E6EC500961197 /* DependencyGraphProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyGraphProtocol.swift; sourceTree = "<group>"; };
+		4745AB241F7E6EEC00961197 /* DependencyGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyGraph.swift; sourceTree = "<group>"; };
+		4745AB261F7E6F7A00961197 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4745AB281F7E6FF700961197 /* RequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
 		47775BE21F7D844A004F042A /* driverChap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = driverChap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47775BE51F7D844A004F042A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47775BE71F7D844A004F042A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,11 +70,6 @@
 		47775BF61F7D844A004F042A /* driverChapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = driverChapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47775BFA1F7D844A004F042A /* driverChapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = driverChapTests.swift; sourceTree = "<group>"; };
 		47775BFC1F7D844A004F042A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47775C061F7D8673004F042A /* RequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestHandler.swift; path = ../../../../../../../.Trash/driverChap/driverChap/API/RequestHandler.swift; sourceTree = "<group>"; };
-		47775C071F7D8673004F042A /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = ../../../../../../../.Trash/driverChap/driverChap/API/Router.swift; sourceTree = "<group>"; };
-		47775C0B1F7D86B4004F042A /* DependencyInjection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DependencyInjection.swift; path = ../../../../../../../.Trash/driverChap/driverChap/DependencyInjection/DependencyInjection.swift; sourceTree = "<group>"; };
-		47775C0C1F7D86B4004F042A /* DependencyGraphProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DependencyGraphProtocol.swift; path = ../../../../../../../.Trash/driverChap/driverChap/DependencyInjection/DependencyGraphProtocol.swift; sourceTree = "<group>"; };
-		47775C0D1F7D86B4004F042A /* DependencyGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DependencyGraph.swift; path = ../../../../../../../.Trash/driverChap/driverChap/DependencyInjection/DependencyGraph.swift; sourceTree = "<group>"; };
 		47775C121F7D906F004F042A /* Vehicule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicule.swift; sourceTree = "<group>"; };
 		47775C141F7D93BA004F042A /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		47775C171F7D9B01004F042A /* VehiculeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiculeViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +112,46 @@
 				39B9AAE2594763AD0865BCCA /* Pods-driverChap.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4745AB151F7E6CD700961197 /* DisclosureCell */ = {
+			isa = PBXGroup;
+			children = (
+				4745AB1D1F7E6D2F00961197 /* ViewModel */,
+				4745AB1C1F7E6D2A00961197 /* View */,
+			);
+			name = DisclosureCell;
+			sourceTree = "<group>";
+		};
+		4745AB161F7E6CDE00961197 /* SwitchCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SwitchCell;
+			sourceTree = "<group>";
+		};
+		4745AB171F7E6CE600961197 /* InfoCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = InfoCell;
+			sourceTree = "<group>";
+		};
+		4745AB1C1F7E6D2A00961197 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4745AB181F7E6D2500961197 /* DisclosureCell.swift */,
+				4745AB191F7E6D2500961197 /* DisclosureCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4745AB1D1F7E6D2F00961197 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4745AB1E1F7E6D3B00961197 /* DisclosureCellViewModel.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		47775BD91F7D844A004F042A = {
@@ -159,8 +205,8 @@
 		47775C051F7D8656004F042A /* API */ = {
 			isa = PBXGroup;
 			children = (
-				47775C061F7D8673004F042A /* RequestHandler.swift */,
-				47775C071F7D8673004F042A /* Router.swift */,
+				4745AB261F7E6F7A00961197 /* Router.swift */,
+				4745AB281F7E6FF700961197 /* RequestHandler.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -168,9 +214,9 @@
 		47775C0A1F7D8697004F042A /* DependencyInjection */ = {
 			isa = PBXGroup;
 			children = (
-				47775C0B1F7D86B4004F042A /* DependencyInjection.swift */,
-				47775C0C1F7D86B4004F042A /* DependencyGraphProtocol.swift */,
-				47775C0D1F7D86B4004F042A /* DependencyGraph.swift */,
+				4745AB201F7E6E2000961197 /* DependencyInjection.swift */,
+				4745AB221F7E6EC500961197 /* DependencyGraphProtocol.swift */,
+				4745AB241F7E6EEC00961197 /* DependencyGraph.swift */,
 			);
 			name = DependencyInjection;
 			sourceTree = "<group>";
@@ -269,6 +315,9 @@
 		47775C371F7DB9F6004F042A /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				4745AB171F7E6CE600961197 /* InfoCell */,
+				4745AB161F7E6CDE00961197 /* SwitchCell */,
+				4745AB151F7E6CD700961197 /* DisclosureCell */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -371,6 +420,7 @@
 			files = (
 				47775BF01F7D844A004F042A /* LaunchScreen.storyboard in Resources */,
 				47775BED1F7D844A004F042A /* Assets.xcassets in Resources */,
+				4745AB1B1F7E6D2500961197 /* DisclosureCell.xib in Resources */,
 				47775BEB1F7D844A004F042A /* Main.storyboard in Resources */,
 				47775C1A1F7D9B01004F042A /* VehiculeViewController.xib in Resources */,
 				47775C2E1F7DA7F5004F042A /* AlertsViewController.xib in Resources */,
@@ -461,21 +511,23 @@
 				47775C151F7D93BA004F042A /* Alert.swift in Sources */,
 				47775C261F7DA320004F042A /* APIVehiculeTransformer.swift in Sources */,
 				47775C321F7DA85F004F042A /* PushNotificationsRepository.swift in Sources */,
-				47775C091F7D8673004F042A /* Router.swift in Sources */,
+				4745AB1F1F7E6D3B00961197 /* DisclosureCellViewModel.swift in Sources */,
+				4745AB211F7E6E2000961197 /* DependencyInjection.swift in Sources */,
 				47775C241F7DA304004F042A /* APIVehiculeProvider.swift in Sources */,
 				47775C361F7DA882004F042A /* APIPushNotificationsTransformer.swift in Sources */,
+				4745AB251F7E6EEC00961197 /* DependencyGraph.swift in Sources */,
 				47775BE81F7D844A004F042A /* ViewController.swift in Sources */,
-				47775C101F7D86B4004F042A /* DependencyGraph.swift in Sources */,
+				4745AB271F7E6F7A00961197 /* Router.swift in Sources */,
+				4745AB1A1F7E6D2500961197 /* DisclosureCell.swift in Sources */,
 				47775C211F7DA288004F042A /* VehiculeRepository.swift in Sources */,
 				47775C2D1F7DA7F5004F042A /* AlertsViewController.swift in Sources */,
-				47775C0E1F7D86B4004F042A /* DependencyInjection.swift in Sources */,
+				4745AB291F7E6FF700961197 /* RequestHandler.swift in Sources */,
 				47775C191F7D9B01004F042A /* VehiculeViewController.swift in Sources */,
 				47775BE61F7D844A004F042A /* AppDelegate.swift in Sources */,
 				47775C1E1F7D9B5F004F042A /* VehiculeViewModel.swift in Sources */,
-				47775C081F7D8673004F042A /* RequestHandler.swift in Sources */,
+				4745AB231F7E6EC500961197 /* DependencyGraphProtocol.swift in Sources */,
 				47775C301F7DA80F004F042A /* AlertsViewModel.swift in Sources */,
 				47775C131F7D906F004F042A /* Vehicule.swift in Sources */,
-				47775C0F1F7D86B4004F042A /* DependencyGraphProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

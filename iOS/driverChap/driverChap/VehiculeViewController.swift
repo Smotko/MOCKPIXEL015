@@ -6,6 +6,7 @@ class VehiculeViewController: UIViewController {
     var viewModel: VehiculeViewModel
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupLayout()
     }
 
     override func didReceiveMemoryWarning() {
@@ -14,10 +15,6 @@ class VehiculeViewController: UIViewController {
     init(viewModel: VehiculeViewModel) {
         self.viewModel = viewModel
         super.init(nibName: String(describing: type(of: self)), bundle: Bundle.main)
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupLayout()
     }
     func setupLayout() {
         
