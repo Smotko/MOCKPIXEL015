@@ -20,13 +20,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbI-bH-Vr8">
-                        <rect key="frame" x="24" y="11" width="42" height="21"/>
+                        <rect key="frame" x="16" y="11" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2g-d6-xeT">
-                        <rect key="frame" x="229" y="11" width="42" height="21"/>
+                        <rect key="frame" x="237" y="11" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -34,9 +34,9 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="M2g-d6-xeT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8Ql-Ig-24K"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="M2g-d6-xeT" secondAttribute="trailing" constant="8" id="Glg-l5-LqK"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="M2g-d6-xeT" secondAttribute="trailing" id="Glg-l5-LqK"/>
                     <constraint firstItem="GbI-bH-Vr8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Qfy-BI-20Z"/>
-                    <constraint firstItem="GbI-bH-Vr8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="juv-dH-FTh"/>
+                    <constraint firstItem="GbI-bH-Vr8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="juv-dH-FTh"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

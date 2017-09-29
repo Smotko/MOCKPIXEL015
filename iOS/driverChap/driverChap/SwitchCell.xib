@@ -20,20 +20,20 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1O1-aQ-OOT">
-                        <rect key="frame" x="24" y="11" width="42" height="21"/>
+                        <rect key="frame" x="16" y="11" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4d6-2E-5sv">
-                        <rect key="frame" x="251" y="6" width="51" height="31"/>
+                        <rect key="frame" x="255" y="6" width="51" height="31"/>
                     </switch>
                 </subviews>
                 <constraints>
                     <constraint firstItem="4d6-2E-5sv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0yw-Ls-hPT"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="4d6-2E-5sv" secondAttribute="trailing" constant="12" id="43b-Wd-gcT"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4d6-2E-5sv" secondAttribute="trailing" constant="8" id="43b-Wd-gcT"/>
                     <constraint firstItem="1O1-aQ-OOT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aB7-TB-Npe"/>
-                    <constraint firstItem="1O1-aQ-OOT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="jzW-Lv-qmp"/>
+                    <constraint firstItem="1O1-aQ-OOT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="jzW-Lv-qmp"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
