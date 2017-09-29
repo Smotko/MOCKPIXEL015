@@ -1,9 +1,10 @@
 <template>
-  <toggler title="Car status"
+  <toggler title="Car doors"
            v-bind:statusTexts="['Unlocked', 'Locked']"
            v-bind:statusStyles="['', 'is-primary']"
            v-bind:buttonTexts="['Lock', 'Unlock']"
-           v-bind:initialState="true">
+           v-bind:active="locked"
+           v-on:toggled="locked = !locked">
   </toggler>
 </template>
 
@@ -14,14 +15,10 @@ export default {
   components: {
     Toggler
   },
-  props: {
-    locked: {
-      type: Boolean,
-      default: true
-    }
-  },
   data () {
-    return {}
+    return {
+      locked: true
+    }
   }
 }
 </script>

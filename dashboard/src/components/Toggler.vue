@@ -1,9 +1,9 @@
 <template>
   <card v-bind:title="title"
-        v-bind:content="statusTexts[+enabled]"
-        v-bind:status="statusStyles[+enabled]">
-    <a class="button" v-on:click="enabled = !enabled">
-      {{buttonTexts[+enabled]}}
+        v-bind:content="statusTexts[+active]"
+        v-bind:status="statusStyles[+active]">
+    <a class="button" v-on:click="toggle" v-if="!!buttonTexts[+active]">
+      {{buttonTexts[+active]}}
     </a>
   </card>
 </template>
@@ -15,17 +15,17 @@ export default {
   components: {
     Card
   },
+  methods: {
+    toggle () {
+      this.$emit('toggled', !this.active)
+    }
+  },
   props: [
     'title',
     'statusTexts',
     'statusStyles',
     'buttonTexts',
-    'initialState'
-  ],
-  data () {
-    return {
-      enabled: !!this.initialState
-    }
-  }
+    'active'
+  ]
 }
 </script>

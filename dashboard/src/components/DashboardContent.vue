@@ -7,9 +7,13 @@
           <h1 class="title">Car controls</h1>
         </div>
         <div class="tile">
-          <CarParentalControl v-bind:initialState="false"></CarParentalControl>
-          <CarLock v-bind:initialState="false"></CarLock>
+          <CarTracking></CarTracking>
+          <CarLock></CarLock>
           <CarGeofence v-bind:initialState="false"></CarGeofence>
+        </div>
+        <div class="tile">
+          <CarImmobilizer></CarImmobilizer>
+          <CarBlinkers></CarBlinkers>
         </div>
         <div class="tile">
           <h1 class="title">Car overview</h1>
@@ -30,13 +34,21 @@ import Card from '@/components/Card'
 import CarLock from '@/components/CarLock'
 import CarParentalControl from '@/components/CarParentalControl'
 import CarGeofence from '@/components/CarGeofence'
+import CarBlinkers from '@/components/CarBlinkers'
+import CarTracking from '@/components/CarTracking'
+import CarImmobilizer from '@/components/CarImmobilizer'
+import Toggler from '@/components/Toggler'
 export default {
   name: 'dashboardcontent',
   components: {
     Card,
+    CarBlinkers,
     CarLock,
     CarParentalControl,
-    CarGeofence
+    CarGeofence,
+    CarTracking,
+    CarImmobilizer,
+    Toggler
   },
   data () {
     return {}
