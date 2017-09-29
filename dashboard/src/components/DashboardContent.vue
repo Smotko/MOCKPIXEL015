@@ -31,7 +31,7 @@ import CarLock from '@/components/CarLock'
 import CarParentalControl from '@/components/CarParentalControl'
 import CarGeofence from '@/components/CarGeofence'
 export default {
-  name: 'content',
+  name: 'dashboardcontent',
   components: {
     Card,
     CarLock,
