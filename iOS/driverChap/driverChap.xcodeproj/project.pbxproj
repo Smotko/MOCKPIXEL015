@@ -504,6 +504,14 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = WPL6N62Q58;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					47775BF51F7D844A004F042A = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -802,7 +810,7 @@
 				DEVELOPMENT_TEAM = WPL6N62Q58;
 				INFOPLIST_FILE = driverChap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.you.driverChap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixelsCamp.driverChap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -816,7 +824,7 @@
 				DEVELOPMENT_TEAM = WPL6N62Q58;
 				INFOPLIST_FILE = driverChap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.you.driverChap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixelsCamp.driverChap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
