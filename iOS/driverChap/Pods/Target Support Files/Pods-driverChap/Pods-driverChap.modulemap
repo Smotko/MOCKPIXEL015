@@ -1,6 +1,0 @@
-framework module Pods_driverChap {
-  umbrella header "Pods-driverChap-umbrella.h"
-
-  export *
-  module * { export * }
-}
