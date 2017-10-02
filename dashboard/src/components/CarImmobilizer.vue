@@ -40,19 +40,40 @@ export default {
       } else {
         this.loading = true
         this.immobilizer = false
-        setTimeout(() => {
+        fetch('http://localhost:5000/api/set_immobilizer', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({immobilizer: +this.immobilizer})
+        }).then(() => {
           this.loading = false
-        }, 400)
-        this.immobilizer = false
+        }).catch(() => {
+          console.log('Something went wrong')
+          this.immobilizer = !this.immobilizer
+          this.loading = false
+        })
       }
     },
     modalDone () {
       this.immobilizer = true
       this.modalShown = false
       this.loading = true
-      setTimeout(() => {
+      fetch('http://localhost:5000/api/set_immobilizer', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({immobilizer: +this.immobilizer})
+      }).then(() => {
         this.loading = false
-      }, 400)
+      }).catch(() => {
+        console.log('Something went wrong')
+        this.immobilizer = !this.immobilizer
+        this.loading = false
+      })
     }
   }
 }

@@ -20,10 +20,21 @@ export default {
     onToggled () {
       this.loading = true
       this.locked = !this.locked
-      // Replace setTimeout with fetch request
-      setTimeout(() => {
+
+      fetch('http://localhost:5000/api/set_lock', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({lock: +this.locked})
+      }).then(() => {
         this.loading = false
-      }, 500)
+      }).catch(() => {
+        console.log('Something went wrong')
+        this.locked = !this.locked
+        this.loading = false
+      })
     }
   },
   data () {
