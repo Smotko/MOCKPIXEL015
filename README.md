@@ -34,7 +34,7 @@ Dashboard:
 ![Dashboard](https://imgur.com/F7UdGqS.png)
 
 iOS:
-![iOS](https://imgur.com/aT7yDzj)
+![iOS](https://imgur.com/aT7yDzj.png)
 
 ## Improvements and other ideas
 
