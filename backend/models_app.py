@@ -91,7 +91,16 @@ def set_miles():
 def set_lock_time():
     """
     sets a timer for the car to be locked(immobilizer active)
-    :return:
+    :return: New car settings
+    """
+
+    pass
+
+
+def get_lock_time():
+    """
+    checks and returns if there is a timer for the car to be locked(immobilizer active)
+    :return: timer/Null
     """
     pass
 
@@ -104,5 +113,5 @@ def get_car():
     params = (
         ('fields', 'batteryLevel,connection.connected,connection.since,doors.allClosed,doors.leftOpen,doors.locked,doors.rightOpen,doors.trunkOpen,engineOn,fuelLevel,geo.latitude,geo.longitude,immobilizerEngaged,mileage,powerState,vin'),)
     r = requests.get('https://api.prod.smartservices.car2go.com/vega/vehicles/MOCKPIXEL015', params=params, cert='pixelcamp.pem')
-    print(json.dumps(r.json(),sort_keys=True, indent=2))
+    print(json.dumps(r.json(), sort_keys=True, indent=2))
     return r.json()
