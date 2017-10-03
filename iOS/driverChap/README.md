@@ -1,12 +1,12 @@
 # Driver Chap iOS
 
-To run the project you need to have **CocoaPods** installed on your system, since it's the dependency manager used for the project.
+To run the project you need to have **CocoaPods** and **Xcode** installed on your system
 
 To install CocoaPods:
 
 ```sudo gem install Cocoapods```
 
-After this, inside the project folder (where Podfile is located) run:
+After this, inside the project folder ```MOCKPIXEL015/iOS/driverChap/``` (where Podfile is located) run:
 
 ```pod install```
 
