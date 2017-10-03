@@ -44,9 +44,9 @@ a big green status saying that everything is OK (the car is inside the geofence,
 Another improvement would be to provide actionable notifications to the parents when things do go wrong (automatically text the child when the car leaves the geofence, provide option to call road assistence when a flat tire is detected, etc).
 
 TODO List:
-set_lock_time/ get_lock_time: Setting a timer for car use (requires an event in API vehicle)
-set_speed: Set a speed limit to the car
-set_miles: Set monthly mileage use
+* `set_lock_time`/`get_lock_time`: Setting a timer for car use (requires an event in API vehicle)
+* `set_speed`: Set a speed limit to the car
+* `set_miles`: Set monthly mileage use
 
 
 ## Feedback
