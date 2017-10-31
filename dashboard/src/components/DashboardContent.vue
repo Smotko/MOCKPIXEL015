@@ -97,6 +97,11 @@ export default {
     fetch('/api/get_car').then((res) => {
       return res.json()
     }).then((json) => {
+      if (json.message) {
+        this.serverIssue = true
+        console.error(json.message)
+        return
+      }
       this.car = json
       this.loading = false
     }).catch(() => {
