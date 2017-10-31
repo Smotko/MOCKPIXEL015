@@ -156,3 +156,4 @@ timeline.xctimeline
 playground.xcworkspace
 .idea
 backend/static
+backend/gunicorn.pid
