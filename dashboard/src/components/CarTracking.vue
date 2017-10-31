@@ -20,7 +20,7 @@ export default {
     onToggled () {
       this.loading = true
       this.tracking = !this.tracking
-      fetch('http://localhost:5000/api/set_tracking', {
+      fetch('/api/set_tracking', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',

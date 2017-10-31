@@ -94,7 +94,7 @@ export default {
     }
   },
   mounted () {
-    fetch('http://localhost:5000/api/get_car').then((res) => {
+    fetch('/api/get_car').then((res) => {
       return res.json()
     }).then((json) => {
       this.car = json

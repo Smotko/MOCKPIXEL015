@@ -21,7 +21,7 @@ export default {
       this.loading = true
       this.locked = !this.locked
 
-      fetch('http://localhost:5000/api/set_lock', {
+      fetch('/api/set_lock', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
