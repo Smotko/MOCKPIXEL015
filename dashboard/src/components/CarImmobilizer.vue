@@ -60,7 +60,7 @@ export default {
       this.immobilizer = true
       this.modalShown = false
       this.loading = true
-      fetch('http://localhost:5000/api/set_immobilizer', {
+      fetch('/api/set_immobilizer', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
