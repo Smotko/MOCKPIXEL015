@@ -32,6 +32,7 @@ public class AlertsFragment extends Fragment {
         alertsList.add(new Alerts("Exceded the speed limit"));
         alertsList.add(new Alerts("Doors Open"));
         alertsList.add(new Alerts("Outside safe zone"));
+        
 
         alertsAdapter = new AlertsAdapter(alertsList,getContext(),getActivity());
         alertsAdapter.notifyDataSetChanged();
