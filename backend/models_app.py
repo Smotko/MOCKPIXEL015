@@ -112,6 +112,6 @@ def get_car():
     """
     params = (
         ('fields', 'batteryLevel,connection.connected,connection.since,doors.allClosed,doors.leftOpen,doors.locked,doors.rightOpen,doors.trunkOpen,engineOn,fuelLevel,geo.latitude,geo.longitude,immobilizerEngaged,mileage,powerState,vin'),)
-    r = requests.get('https://api.prod.smartservices.car2go.com/vega/vehicles/MOCKPIXEL015', params=params, cert='pixelcamp.pem')
+    r = requests.get(HOST, params=params, cert='pixelcamp.pem')
     print(json.dumps(r.json(), sort_keys=True, indent=2))
     return r.json()
